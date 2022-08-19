@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Food,LLC</title>
+<link href='css/styles.css' rel='stylesheet' type='text/css'>
+
+<style>
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.header-title{
+  font-size: 1.3em;
+  padding-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar-menu{
+  width: 100%;  
+  height: 80px;  
+  padding-top: 0px;
+  padding-left: 0px;
+  text-left: 10px;
+}
+
+.navbar-header{
+  width: 100%;   
+  height: 100px;
+  font-size: 1.2em;
+  background-color:#C0C0C0;
+  border-radius: 0;
+  border: 1px solid #000;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.text-left{ 
+	padding-left: 30px; 
+	padding-top: 5px; 
+}
+
+.panel-footer{
+    width: 100%;  
+	margin-top: 50px;
+	padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:#FFF;
+}
+
+.col-sm-4{ 
+  text-align: left;
+}
+
+.container {
+  width: 100%;  
+  position: relative;  
+}
+
+#chicken{ padding-left: 20px; }
+
+.item{
+  height: 400px;
+  text-align: left;
+  font-size: 1.4em;  
+  position: relative;  
+  background-color:#C0C0C0;
+  margin: 15px;
+  padding-top: 140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border: 2px solid #000;
+  font-family: Helvetica, sans-serif;    
+}
+
+.item-title{
+  text-align: center;
+  height: 150px;
+  font-size: 1.3em;   
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 100px;  
+}
+
+.item-text{
+  font-size: 1.3em;  
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  height: 200px;
+}
+
+.t1 .t2 .t3 /* title1 & title2 & title3 */
+{  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 10;	
+  font-weight: bold;
+  font-size: 1.3em;  
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: Helvetica, sans-serif;  
+}
+
+.p1 .p2 .p3 {
+  font-size: 1.2em;  
+  height: 200px;
+}
+
+.menu-head .menu-title{
+  font-size: 1.6em;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.menu-head{
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 10;	
+  padding-left: 50;
+  text-left: 50;
+}
+
+.title{
+  width: 100%; 
+  height: 150 px;  
+  text-align: center;
+  padding-top: 30px;
+}
+
+.menu-title{
+  font-size: 1.6em;
+  text-align: center;
+  margin-bottom: 50px;  
+  padding-top: 10px;
+  width: 100%; 
+  height: 200 px;  
+}
+
+.text-center{    
+	text-align: center;
+    padding-top: 20;
+}
+
+
+/*
+#header-nav {  
+  background-color:#C0C0C0;
+  border-radius: 0;
+  border: 2px solid #000;
+  width: 100%; 
+  height: 150px;
+}
+*/
+
+ul.dropdown-menu a {
+ text-decoration: none !important;
+ z-index:1;
+}
+.dropup .dropdown-menu {
+  top: auto;
+  left:-2%;
+  bottom: 102% !important;
+  margin-left: 15px;
+  margin-bottom: 1px;
+}
+.dropdown-menu {
+    z-index:1;
+}
+
+body{
+  font-family: Helvetica, sans-serif;  
+}
+
+.row{
+  width: 100%;
+  padding: 20;
+  position: absolute;
+  top: 20px; 
+}
+
+
+.item p{
+  margin-top: 18px;
+  text-align: justify;
+  font-size: 100%;
+}
+
+#title-one {
+  /* border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;  */
+} 
+
+#title-two{
+  /* background-color: #dc143c; */
+  /* border-left: 2px solid #000;
+  border-bottom: 2px solid #000; */
+}
+
+#title-three{
+  /* background-color: #E5D19A; */
+  /* border-left: 2px solid #000;
+  border-bottom: 2px solid #000; */
+}
+
+
+/* Responsive part */
+/* Desktop Screen */
+@media (min-width: 992px){
+   .m1{ visibility: invisible; }
+
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;  
+  }
+  .col-lg-1 {
+    width: 8%;
+  }
+  .col-lg-2 {
+    width: 16%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33%;
+  }
+  .col-lg-5 {
+    width: 41%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58%;
+  }
+  .col-lg-8 {
+    width: 66%;
+  }
+  .col-lg-9 {
+    width: 74%;
+  }
+  .col-lg-10 {
+    width: 83%;
+  }
+  .col-lg-11 {
+    width: 91%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-tablet{
+   width: 33%;
+   float: left;
+  }
+}
+
+/* Tablet Screen */
+@media (min-width: 768px) and (max-width: 991px){
+   .m1{ visibility: invisible; }
+
+   .t1 .t2 .t3 { 
+		float:center; 
+		text-align: center;
+		padding-left:200px;
+   }
+
+   .item{ 
+        float:left; 
+        width:50%; }
+
+   #beef, #chicken :{ width:45%; padding-left:50px;}
+
+   #sushi:{ width:90%; padding-left:50px;}
+
+  .col-lg-4 {
+    width: 50%;
+    float: left;
+  }
+  .col-lg-tablet{
+   width: 100%;
+   float: left;
+ }
+ .item{
+    float: left;
+  }
+  p{
+    float: left;
+  } 
+  .tex{ float: left; }
+}
+
+/* Mobile Screen */
+@media (max-width: 767px){
+  .m1{ visibility: visible; }
+  .t1 .t2 .t3 { 
+		float:center; 
+		text-align: center;
+		padding-left:200px;
+   } 
+  .col-lg-4{
+    width: 100%;
+    float: left;
+  }
+  .col-lg-tablet{
+   width: 100%;
+   float: left;
+  }
+  .tex{ float: left; }
+}
+
+</style>
+
+</head>
+
+<body >
+<header>
+ <div class="navbar-header">
+ <ul class="nav nav-tabs visible">
+  <nav id="header-nav" class="navbar navbar-default navbar-menu"> 
+       <div class="navbar-brand text-left header-title">
+		<ul>    	 
+            <h2 class="menu-head text-left">Food, LLC</h2>       	    
+		<div class="m1 invisible">
+          <div class="dropdown"> 
+		  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu
+          </button>
+		  <div class="dropdown-menu" aria-labelledby="Menu">
+			<a class="dropdown-item" href="#">Chicken</a>
+			<a class="dropdown-item" href="#">Beef</a>
+			<a class="dropdown-item" href="#">Sushi</a>
+		 </div>
+		</div>
+   	  </div>
+     </ul> 
+   </div> 
+  </nav>
+ </ul>  
+ </div>
+</header> 
+ 
+ <footer class="panel-footer"> 
+ <div class="navbar-footer"> 
+   <div class="title menu-title text-center">
+        <h2 class="menu-head text-center"> Our menu </h2>
+   </div>
+  
+  <div class="container">
+    <div class="row">
+     <div class="col-sm-3">
+     <section id="chicken" class="col-sm-4">
+      <div class="col-lg-4">
+        <div class="item">
+          <div class="item-title" id="title-one">
+            <h3 class="t1" >Chicken</h3>
+          </div>
+          <p class="p1">
+            Iorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat not proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Iorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          </p>
+        </div>
+      </div>
+	  </section>
+	  <section id="beef" class="col-sm-4">
+      <div class="col-lg-4">
+        <div class="item">
+         <div class="item-title" id="title-two">
+          <h3 class="t2">Beef</h3>
+        </div>
+        <p class="p2">
+          Iorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat not proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Iorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </p>
+      </div>
+    </div>
+	</section>
+	<section id="sushi" class="col-sm-4">
+    <div class="col-lg-tablet">    
+      <div class="item">
+		<div class="item-title" id="title-three">
+			<h3 class="t3">Sushi</h3>
+		</div>         
+		   <p class="p3">
+			Iorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat not proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Iorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		   </p>	    
+	  </div>
+     </div>
+    </section>
+    </div>
+   </div>
+  </div>
+ </div>
+ </footer>
+
+</body>
+
+</html>
